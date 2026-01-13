@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, Text } from 'react-native';
+import { StyleSheet } from 'react-native-unistyles';
 
-export default function App() {
+const MyComponent = () => {
   return (
     <View style={styles.container}>
-      <Text>James Gay</Text>
-      <StatusBar style="auto" />
+      <Text>Hello world from Unistyles</Text>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    backgroundColor: 'red'
+  }
 });
+
+export default MyComponent;
